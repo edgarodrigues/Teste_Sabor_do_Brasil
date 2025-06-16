@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.coluna {
+    background: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-empresa {
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.nome-empresa {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.linha-laranja {
+    width: 80%;
+    border: none;
+    border-top: 4px solid #D97014;
+    margin: 16px 0;
+}
+
