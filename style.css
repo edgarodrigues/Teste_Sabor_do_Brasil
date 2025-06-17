@@ -4,6 +4,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    background: #fff;
+    /* fundo da tela branco */
 }
 
 .coluna {
@@ -40,3 +42,567 @@ body {
     margin: 16px 0;
 }
 
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.borda-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100vh;
+    background: #333;
+    z-index: 10;
+    border-radius: 2px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.borda-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100vh;
+    background: #ccc;
+    z-index: 10;
+    border-radius: 1px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* .borda-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100vh;
+    background: #ccc;
+    z-index: 10;
+    border-radius: 1px;
+  } */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap removido para evitar linhas duplas */
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    /* Remove borda esquerda para evitar sobreposição */
+}
+
+.coluna:first-child {
+    border-left: 1px solid #ccc;
+    /* Mantém borda esquerda só na primeira coluna */
+}
+
+.borda-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100vh;
+    background: #ccc;
+    z-index: 10;
+    border-radius: 1px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+.coluna:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.borda-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100vh;
+    background: #ccc;
+    z-index: 10;
+    border-radius: 0.5px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap removido para evitar borda dupla */
+    background: #fff;
+    position: relative;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: none;
+    /* Remove borda esquerda para evitar dupla no centro */
+}
+
+.coluna:first-child {
+    border-left: 1px solid #ccc;
+    /* Só a primeira coluna tem borda esquerda */
+}
+
+.borda-vertical {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100vh;
+    background: #ccc;
+    z-index: 10;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.coluna-esquerda {
+    border-left: 1px solid #ccc;
+    border-right: none;
+}
+
+.coluna-centro {
+    border-right: 1px solid #ccc;
+    /* Apenas esta borda forma a linha central */
+    border-left: none;
+}
+
+.coluna-direita {
+    border-right: 1px solid #ccc;
+    border-left: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #fff;
+    position: relative;
+}
+
+.coluna {
+    background: #fff;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.coluna-esquerda {
+    border-left: 1px solid #ccc;
+    /* Linha à esquerda */
+    border-right: none;
+}
+
+.coluna-centro {
+    border-right: 1px solid #ccc;
+    /* Linha central à direita */
+    border-left: none;
+}
+
+.coluna-direita {
+    border-right: 1px solid #ccc;
+    /* Linha à direita */
+    border-left: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.borda-retangular {
+    position: absolute;
+    top: 40px;
+    /* distância do topo da página */
+    left: 50%;
+    /* centraliza horizontalmente */
+    transform: translateX(-50%);
+    width: 300px;
+    /* largura do retângulo */
+    height: 500px;
+    /* altura do retângulo */
+    border-left: 2px solid #ccc;
+    /* linha vertical esquerda */
+    border-right: 2px solid #ccc;
+    /* linha vertical direita */
+    border-top: 2px solid #ccc;
+    /* linha horizontal superior */
+    border-bottom: none;
+    /* sem linha inferior */
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.borda-retangular {
+    position: absolute;
+    top: 0;
+    /* começa no topo */
+    left: 50%;
+    /* centraliza horizontalmente */
+    transform: translateX(-50%);
+    width: 300px;
+    /* largura do retângulo */
+    height: 100vh;
+    /* altura total da tela */
+    border-left: 2px solid #ccc;
+    /* linha vertical esquerda */
+    border-right: 2px solid #ccc;
+    /* linha vertical direita */
+    border-top: 2px solid #ccc;
+    /* linha horizontal superior */
+    border-bottom: none;
+    /* sem linha inferior */
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.borda-retangular {
+    position: absolute;
+    top: 40px;
+    /* abaixa a linha horizontal */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: calc(100vh - 40px);
+    /* reduz a altura das linhas verticais */
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.borda-retangular {
+    position: absolute;
+    top: 40px;
+    /* abaixa a linha horizontal */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: calc(100vh - 40px);
+    /* reduz a altura das linhas verticais */
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: none;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.borda-retangular {
+    position: absolute;
+    top: 40px;
+    /* abaixa a linha horizontal */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: calc(100vh - 40px);
+    /* reduz a altura das linhas verticais */
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: none;
+    background: transparent;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.titulo-borda {
+    margin-top: 16px;
+    /* Espaço abaixo da linha horizontal */
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.borda-retangular {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: calc(100vh - 40px);
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: none;
+    background: transparent;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.titulo-borda {
+    margin-top: 16px;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .borda-retangular {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: calc(100vh - 40px);
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: none;
+    background: transparent;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-y: auto;
+    padding-bottom: 24px;
+  }
+
+  .titulo-borda {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  .card {
+    width: 90%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    margin: 0 auto;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 1.1em;
+    margin-bottom: 4px;
+    color: #222;
+  }
+
+  .card-subtitle {
+    font-size: 0.95em;
+    color: #888;
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-size: 0.95em;
+    margin-bottom: 12px;
+    color: #444;
+  }
+
+  .card-link {
+    font-size: 0.95em;
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 8px;
+  }
+
+  .card-link:hover {
+    text-decoration: underline;
+  }
+
+  .card-img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 10px 0;
+    display: block;
+  }
