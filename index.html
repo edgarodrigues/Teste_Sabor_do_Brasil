@@ -15,6 +15,16 @@
       Sabor do Brasil
       <span class="linha-laranja"></span>
     </span>
+    <div class="likes-dislikes-canto">
+      <div class="like-block">
+        <span class="like-num">0</span>
+        <div class="like-label">Like</div>
+      </div>
+      <div class="dislike-block">
+        <span class="dislike-num">0</span>
+        <div class="dislike-label">Dislike</div>
+      </div>
+    </div>
   </div>
   <div class="coluna"></div>
   <div class="coluna"></div>
@@ -51,7 +61,18 @@
     <div class="card">
       <h3>Risoto de cogumelos</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 25</span>
+        <span class="dislike">👎 3</span>
+      </div>
       <a href="#">Go somewhere</a>
+      <div class="localizacao-card">
+        <span class="cidade">São Paulo</span> - <span class="estado">SP</span>
+      </div>
+      <div class="comentario-card">
+        <span class="comentario-icone">💬</span>
+        <span class="comentario-num">12</span>
+      </div>
     </div>
   </div>
   <footer class="rodape">
@@ -169,6 +190,7 @@
   }
 
   .card {
+    position: relative;
     background: #f9f9f9;
     border-radius: 8px;
     margin-bottom: 18px;
@@ -227,6 +249,89 @@
     height: 24px;
     margin: 0 8px;
     vertical-align: middle;
+  }
+
+  .likes-dislikes-canto {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .like-block,
+  .dislike-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .like-num,
+  .dislike-num {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .like-label,
+  .dislike-label {
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  .likes-dislikes {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .like {
+    margin-right: 16px;
+    font-size: 1.2em;
+  }
+
+  .dislike {
+    font-size: 1.2em;
+  }
+
+  .comentario-card {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 2px 8px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    font-size: 1em;
+    gap: 4px;
+  }
+
+  .comentario-icone {
+    margin-right: 4px;
+    font-size: 1.2em;
+  }
+
+  .comentario-num {
+    font-size: 1em;
+    color: #333;
+  }
+
+  .localizacao-card {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .cidade {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .estado {
+    font-weight: normal;
+    color: #777;
   }
 </style>
 
