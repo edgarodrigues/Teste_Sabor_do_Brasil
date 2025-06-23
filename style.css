@@ -588,5 +588,90 @@ body {
     vertical-align: middle;
   }
 
+  .borda-central {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    /* Remova o cálculo anterior e use 100vh menos a altura do rodapé */
+    height: calc(100vh - 62px); /* ajuste 62px para a altura real do seu rodapé */
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    border-bottom: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 24px 16px 0 16px;
+    overflow-y: auto;
+    text-align: center;
+  }
+
+  .btn-cancelar {
+  background: #fff;           /* fundo branco */
+  color: #D97014;             /* texto laranja */
+  font-weight: bold;
+  border: 2px solid #D97014;  /* borda laranja */
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-cancelar:hover {
+  background: #fff5ea;
+  color: #D97014;
+}
+
+.main-publicacoes {
+  padding: 24px;
+  background: #fff;
+}
+.publicacao {
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.interacoes-usuario {
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+  font-size: 1em;
+  align-items: center;
+}
+.like-usuario {
+  color: #388e3c;
+  font-weight: bold;
+}
+.dislike-usuario {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.btn-entrar-modal {
+  background: #D97014;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-entrar-modal:hover {
+  background: #b85c10;
+}
+
+.input-erro {
+  border: 2px solid #d32f2f !important;
+  background: #fff0f0;
+}
+
+
+
+
 
 

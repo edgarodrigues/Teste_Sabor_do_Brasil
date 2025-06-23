@@ -1,0 +1,7 @@
+<div class="perfil-usuario">
+  <img src="avatar_usuario.png" alt="Avatar do usuário" class="avatar-perfil">
+  <div class="info-perfil">
+    <span class="nome-perfil">Maria Oliveira</span>
+    <span class="likes-geral">👍 Likes: <span id="total-likes">123</span></span>
+  </div>
+</div>
