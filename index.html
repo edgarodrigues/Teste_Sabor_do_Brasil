@@ -3,18 +3,18 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SaborDoBrasil</title>
-
-
+  <title>Sabor do Brasil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Logomarca e título -->
   <div class="logo-text-container">
     <img src="Logomarca_culinaria_sabor_Brasil.png" alt="Logomarca Sabor do Brasil" class="logo-site-inline">
     <span class="sabor-brasil-text">
       Sabor do Brasil
-      <span class="linha-laranja"></span>
     </span>
+    <span class="linha-laranja"></span>
     <div class="likes-dislikes-canto">
       <div class="like-block">
         <span class="like-num">0</span>
@@ -26,74 +26,68 @@
       </div>
     </div>
   </div>
-  <div class="coluna"></div>
-  <div class="coluna"></div>
-  <div class="coluna coluna-login">
-    <!-- Botão Entrar -->
-    <button class="btn-entrar" onclick="abrirModalLogin()">Entrar</button>
-  </div>
+
+  <!-- Botão Entrar -->
+  <button class="btn-entrar" onclick="abrirModalLogin()">Entrar</button>
+
+  <!-- Área central de publicações -->
   <div class="borda-central">
     <h2 class="titulo-publicacoes">Publicações</h2>
     <div class="card">
       <h3>Feijoada brasileira</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
       <a href="#">Go somewhere</a>
     </div>
     <div class="card">
       <h3>Moqueca baiana</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
       <a href="#">Go somewhere</a>
     </div>
     <div class="card">
       <h3>Acarajé baiano</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
       <a href="#">Go somewhere</a>
     </div>
     <div class="card">
       <h3>Virado à paulista</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
       <a href="#">Go somewhere</a>
     </div>
     <div class="card">
       <h3>Tortellini</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
       <a href="#">Go somewhere</a>
     </div>
     <div class="card">
       <h3>Risoto de cogumelos</h3>
       <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
       <div class="likes-dislikes">
-        <button class="like" onclick="abrirModalLogin()">👍 25</button>
-        <button class="dislike" onclick="abrirModalLogin()">👎 3</button>
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
       </div>
       <a href="#">Go somewhere</a>
-      <div class="localizacao-card">
-        <span class="cidade">São Paulo</span> - <span class="estado">SP</span>
-      </div>
-      <div class="comentario-card">
-        <span class="comentario-icone">💬</span>
-        <span class="comentario-num">12</span>
-      </div>
     </div>
   </div>
-
-  <main class="main-publicacoes">
-    <div class="publicacao">
-      <h3>Feijoada brasileira</h3>
-      <div class="interacoes-usuario">
-        <span class="like-usuario">👍 12</span>
-        <span class="dislike-usuario">👎 1</span>
-      </div>
-    </div>
-    <div class="publicacao">
-      <h3>Moqueca baiana</h3>
-      <div class="interacoes-usuario">
-        <span class="like-usuario">👍 5</span>
-        <span class="dislike-usuario">👎 0</span>
-      </div>
-    </div>
-    <!-- Adicione outras publicações conforme necessário -->
-  </main>
 
   <!-- Modal de Login -->
   <div id="modal-login" class="modal-login">
@@ -114,441 +108,23 @@
     </div>
   </div>
 
-  <div class="perfil-usuario">
-    <img src="avatar_usuario.png" alt="Avatar do usuário" class="avatar-perfil">
-    <div class="info-perfil">
-      <span class="nome-perfil">usuario_01</span>
-      <span class="likes-geral">👍 Likes: <span id="total-likes">123</span></span>
-    </div>
-  </div>
-
+  <!-- Rodapé -->
   <footer class="rodape">
-    Sabor do Brasil
-    <img src="Instagram.svg" alt="Instagram" class="icone-rede">
-    <img src="Twitter.svg" alt="Twitter" class="icone-rede">
-    <img src="Whatsapp.svg" alt="Whatsapp" class="icone-rede">
-    <img src="Globe.svg" alt="Site" class="icone-rede">
-    Copyright-2024
+    <span class="rodape-bloco">Sabor do Brasil</span>
+    <span class="rodape-bloco rodape-icones">
+      <img src="Instagram.svg" alt="Instagram" class="icone-rede">
+      <img src="Twitter.svg" alt="Twitter" class="icone-rede">
+      <img src="Whatsapp.svg" alt="Whatsapp" class="icone-rede">
+      <img src="Globe.svg" alt="Site" class="icone-rede">
+    </span>
+    <span class="rodape-bloco">Copyright-2025</span>
   </footer>
-</body>
 
-<style>
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-  }
+  <style>
 
-  .logo-text-container {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 101;
-  }
+  </style>
 
-  .logo-site-inline {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    display: block;
-  }
-
-  .sabor-brasil-text {
-    margin-top: 12px;
-    /* Espaço maior abaixo do ícone */
-    font-family: Arial, sans-serif;
-    font-size: 1.1em;
-    color: #222;
-    font-weight: bold;
-    letter-spacing: 1px;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-  }
-
-  .linha-laranja {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background: orange;
-    border-radius: 2px;
-    margin-top: 4px;
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    content: "";
-  }
-
-  .borda-central {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    min-width: 180px;
-    height: calc(100vh - 40px);
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background: transparent;
-    box-sizing: border-box;
-    padding: 24px 16px 0 16px;
-    overflow-y: auto;
-    text-align: center;
-  }
-
-  .btn-entrar {
-    position: absolute;
-    top: 20px;
-    /* Calcula a posição à direita da borda central */
-    left: calc(50% + 170px);
-    /* 170px = metade da largura da borda-central (150px) + 20px de margem */
-    background: orange;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 28px;
-    font-size: 1em;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    letter-spacing: 1px;
-    cursor: pointer;
-    z-index: 102;
-    transition: background 0.2s;
-  }
-
-  .btn-entrar:hover {
-    background: #ff9800;
-  }
-
-  .titulo-publicacoes {
-    color: #000;
-    font-size: 1.5em;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-  }
-
-  .card {
-    position: relative;
-    background: #f9f9f9;
-    border-radius: 8px;
-    margin-bottom: 18px;
-    padding: 16px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-    text-align: left;
-  }
-
-  .card h3 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1.1em;
-    color: #333;
-  }
-
-  .card a {
-    display: inline-block;
-    margin-top: 8px;
-    color: #1976d2;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95em;
-  }
-
-  .coluna {
-    display: inline-block;
-    vertical-align: top;
-    width: 48%;
-    /* Largura das colunas */
-    height: calc(100vh - 40px);
-    /* Altura total menos o espaço ocupado pela borda central */
-    box-sizing: border-box;
-    padding: 0 16px;
-    /* Espaçamento interno das colunas */
-  }
-
-  .coluna-login {
-    text-align: right;
-    /* Alinha o botão à direita da coluna */
-  }
-
-  .rodape {
-    text-align: center;
-    padding: 12px 0;
-    background: #f1f1f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 0.9em;
-    color: #666;
-  }
-
-  .icone-rede {
-    width: 24px;
-    height: 24px;
-    margin: 0 8px;
-    vertical-align: middle;
-  }
-
-  .likes-dislikes-canto {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-    width: 100%;
-  }
-
-  .like-block,
-  .dislike-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-  }
-
-  .like-num,
-  .dislike-num {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .like-label,
-  .dislike-label {
-    font-size: 0.9em;
-    color: #777;
-  }
-
-  .likes-dislikes {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-  }
-
-  .like {
-    margin-right: 16px;
-    font-size: 1.2em;
-  }
-
-  .dislike {
-    font-size: 1.2em;
-  }
-
-  .comentario-card {
-    position: absolute;
-    right: 8px;
-    bottom: 8px;
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding: 2px 8px;
-    border-radius: 12px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-    font-size: 1em;
-    gap: 4px;
-  }
-
-  .comentario-icone {
-    margin-right: 4px;
-    font-size: 1.2em;
-  }
-
-  .comentario-num {
-    font-size: 1em;
-    color: #333;
-  }
-
-  .localizacao-card {
-    margin-top: 8px;
-    font-size: 0.9em;
-    color: #555;
-  }
-
-  .cidade {
-    font-weight: bold;
-    color: #333;
-  }
-
-  .estado {
-    font-weight: normal;
-    color: #777;
-  }
-
-  /* Estilos do Modal */
-  .modal-login {
-    display: none;
-    position: fixed;
-    z-index: 105;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .close-modal {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close-modal:hover,
-  .close-modal:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  /* Estilos dos Botões do Modal */
-  .modal-content button {
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .modal-content button:hover {
-    background-color: #ff9800;
-  }
-
-  /* Estilos dos Inputs do Modal */
-  .modal-content input[type="email"],
-  .modal-content input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  .botoes-login {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
-  }
-
-  .btn-cancelar {
-    background-color: #f44336;
-    /* Vermelho */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .btn-cancelar:hover {
-    background-color: #e53935;
-  }
-
-  .btn-entrar-modal {
-    background-color: orange;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-
-  .btn-entrar-modal:hover {
-    background-color: #ff9800;
-  }
-
-  .input-erro {
-    border: 1px solid #f44336;
-    background-color: #fff3f3;
-  }
-
-  .perfil-usuario {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: #fff;
-    padding: 12px 20px;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-    margin-bottom: 24px;
-  }
-
-  .avatar-perfil {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-
-  .info-perfil {
-    flex: 1;
-    text-align: left;
-  }
-
-  .nome-perfil {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: #222;
-    font-family: Arial, sans-serif;
-  }
-
-  .email-perfil {
-    font-size: 0.9em;
-    color: #777;
-    margin: 4px 0;
-  }
-
-  .contagem-interacoes {
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
-    color: #555;
-  }
-
-  .like-perfil,
-  .dislike-perfil {
-    margin-right: 16px;
-  }
-</style>
-
-<script>
+  <script>
   function abrirModalLogin() {
     document.getElementById('modal-login').style.display = 'block';
   }
@@ -565,6 +141,43 @@
     }
   }
 
-</script>
+  // Validação de login simulada
+  function validarLogin(event) {
+    event.preventDefault();
+    const email = document.querySelector('#modal-login input[type="email"]');
+    const senha = document.querySelector('#modal-login input[type="password"]');
+    const mensagemErro = document.getElementById('mensagem-erro-login');
+
+    // Simulação de verificação no "banco de dados"
+    if (email.value !== "usuario@exemplo.com" || senha.value !== "senha123") {
+      mensagemErro.style.display = "block";
+      email.classList.add('input-erro');
+      senha.classList.add('input-erro');
+    } else {
+      mensagemErro.style.display = "none";
+      email.classList.remove('input-erro');
+      senha.classList.remove('input-erro');
+      fecharModalLogin();
+      // Aqui você pode redirecionar ou atualizar a interface do usuário logado
+    }
+  }
+
+  // Remove mensagem de erro ao digitar corretamente
+  document.addEventListener('DOMContentLoaded', function () {
+    const email = document.querySelector('#modal-login input[type="email"]');
+    const senha = document.querySelector('#modal-login input[type="password"]');
+    const mensagemErro = document.getElementById('mensagem-erro-login');
+
+    function limparErro() {
+      mensagemErro.style.display = "none";
+      email.classList.remove('input-erro');
+      senha.classList.remove('input-erro');
+    }
+
+    email.addEventListener('input', limparErro);
+    senha.addEventListener('input', limparErro);
+  });
+  </script>
+</body>
 
 </html>

@@ -1,673 +1,360 @@
 body {
     margin: 0;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background: #fff;
-    /* fundo da tela branco */
-}
-
-.coluna {
-    background: #e0e0e0;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.perfil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.logo-empresa {
-    width: 120px;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.nome-empresa {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-}
-
-.linha-laranja {
-    width: 80%;
-    border: none;
-    border-top: 4px solid #D97014;
-    margin: 16px 0;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
     background: #fff;
     position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.borda-vertical {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 100vh;
-    background: #333;
-    z-index: 10;
-    border-radius: 2px;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-.borda-vertical {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100vh;
-    background: #ccc;
-    z-index: 10;
-    border-radius: 1px;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-}
-
-/* .borda-vertical {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100vh;
-    background: #ccc;
-    z-index: 10;
-    border-radius: 1px;
-  } */
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* gap removido para evitar linhas duplas */
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-left: none;
-    /* Remove borda esquerda para evitar sobreposição */
-}
-
-.coluna:first-child {
-    border-left: 1px solid #ccc;
-    /* Mantém borda esquerda só na primeira coluna */
-}
-
-.borda-vertical {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100vh;
-    background: #ccc;
-    z-index: 10;
-    border-radius: 1px;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-left: none;
-}
-
-.coluna:first-child {
-    border-left: 1px solid #ccc;
-}
-
-.borda-vertical {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100vh;
-    background: #ccc;
-    z-index: 10;
-    border-radius: 0.5px;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* gap removido para evitar borda dupla */
-    background: #fff;
-    position: relative;
-}
-
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-left: none;
-    /* Remove borda esquerda para evitar dupla no centro */
-}
-
-.coluna:first-child {
-    border-left: 1px solid #ccc;
-    /* Só a primeira coluna tem borda esquerda */
-}
-
-.borda-vertical {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 100vh;
-    background: #ccc;
-    z-index: 10;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
-
-.coluna-esquerda {
-    border-left: 1px solid #ccc;
-    border-right: none;
-}
-
-.coluna-centro {
-    border-right: 1px solid #ccc;
-    /* Apenas esta borda forma a linha central */
-    border-left: none;
-}
-
-.coluna-direita {
-    border-right: 1px solid #ccc;
-    border-left: none;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background: #fff;
-    position: relative;
-}
-
-.coluna {
-    background: #fff;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
-
-.coluna-esquerda {
-    border-left: 1px solid #ccc;
-    /* Linha à esquerda */
-    border-right: none;
-}
-
-.coluna-centro {
-    border-right: 1px solid #ccc;
-    /* Linha central à direita */
-    border-left: none;
-}
-
-.coluna-direita {
-    border-right: 1px solid #ccc;
-    /* Linha à direita */
-    border-left: none;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-}
-
-.borda-retangular {
-    position: absolute;
-    top: 40px;
-    /* distância do topo da página */
-    left: 50%;
-    /* centraliza horizontalmente */
-    transform: translateX(-50%);
-    width: 300px;
-    /* largura do retângulo */
-    height: 500px;
-    /* altura do retângulo */
-    border-left: 2px solid #ccc;
-    /* linha vertical esquerda */
-    border-right: 2px solid #ccc;
-    /* linha vertical direita */
-    border-top: 2px solid #ccc;
-    /* linha horizontal superior */
-    border-bottom: none;
-    /* sem linha inferior */
-    background: transparent;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-}
-
-.borda-retangular {
-    position: absolute;
-    top: 0;
-    /* começa no topo */
-    left: 50%;
-    /* centraliza horizontalmente */
-    transform: translateX(-50%);
-    width: 300px;
-    /* largura do retângulo */
-    height: 100vh;
-    /* altura total da tela */
-    border-left: 2px solid #ccc;
-    /* linha vertical esquerda */
-    border-right: 2px solid #ccc;
-    /* linha vertical direita */
-    border-top: 2px solid #ccc;
-    /* linha horizontal superior */
-    border-bottom: none;
-    /* sem linha inferior */
-    background: transparent;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-}
-
-.borda-retangular {
-    position: absolute;
-    top: 40px;
-    /* abaixa a linha horizontal */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: calc(100vh - 40px);
-    /* reduz a altura das linhas verticais */
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background: transparent;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-}
-
-.borda-retangular {
-    position: absolute;
-    top: 40px;
-    /* abaixa a linha horizontal */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: calc(100vh - 40px);
-    /* reduz a altura das linhas verticais */
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background: transparent;
-    box-sizing: border-box;
-}
-
-  body {
-    margin: 0;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background: #fff;
-    position: relative;
-  }
-
-  .coluna {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-  }
-
-  .borda-retangular {
-    position: absolute;
-    top: 40px;
-    /* abaixa a linha horizontal */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: calc(100vh - 40px);
-    /* reduz a altura das linhas verticais */
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background: transparent;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .titulo-borda {
-    margin-top: 16px;
-    /* Espaço abaixo da linha horizontal */
-    font-size: 1.5em;
     font-family: Arial, sans-serif;
-    color: #333;
-    font-weight: bold;
-  }
+}
 
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-  }
-
-  .logo {
+.logo-text-container {
     position: absolute;
     top: 16px;
     left: 16px;
-    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 101;
+}
+
+.logo-site-inline {
     width: 48px;
     height: 48px;
+    object-fit: contain;
+    display: block;
+}
+
+.sabor-brasil-text {
+    margin-top: 12px;
+    font-size: 1.1em;
+    color: #222;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+/* Linha laranja agora fica logo após o termo Sabor do Brasil */
+.linha-laranja {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: orange;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 16px; /* espaço entre a linha e os likes/dislikes */
+    position: static;
+    left: 0;
+    bottom: 0;
+    content: "";
+}
+
+.likes-dislikes-canto {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+    width: 100%;
+    gap: 32px;
+}
+
+.like-block,
+.dislike-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.like-num {
+    color: #388e3c;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.dislike-num {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.like-label,
+.dislike-label {
+    color: #444;
+    font-size: 0.95em;
+    margin-top: 2px;
+}
+
+.btn-entrar {
+    position: absolute;
+    top: 20px;
+    left: calc(50% + 170px);
+    background: orange;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 16px 64px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    z-index: 102;
+    transition: background 0.2s;
+}
+
+.btn-entrar:hover {
+    background: #ff9800;
+}
+
+.perfil-usuario {
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
+    gap: 12px;
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    margin: 90px auto 24px auto;
+    max-width: 340px;
+}
 
-  .logo-img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
+.avatar-perfil {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-  .borda-retangular {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: calc(100vh - 40px);
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background: transparent;
-    box-sizing: border-box;
-    text-align: center;
-  }
+.info-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 
-  .titulo-borda {
-    margin-top: 16px;
-    font-size: 1.5em;
-    font-family: Arial, sans-serif;
-    color: #333;
+.nome-perfil {
+    font-size: 1.1em;
     font-weight: bold;
-  }
+    color: #222;
+}
 
-   body {
-    margin: 0;
-    min-height: 100vh;
-    background: #fff;
-    position: relative;
-  }
+.likes-geral {
+    color: #388e3c;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 2px;
+}
 
-  .borda-retangular {
+.borda-central {
     position: absolute;
-    top: 40px;
+    top: 170px;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
-    height: calc(100vh - 40px);
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
-    background: #fff;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 24px 16px 0 16px;
-  }
-
-  footer.rodape {
-    grid-column: 1 / -1;
-    background: #f8f8f8;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  footer.rodape .icone-rede {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-
-  footer.rodape img {
-    vertical-align: middle;
-  }
-
-  footer.rodape {
-    grid-column: 1 / -1;
-    background: #f8f8f8;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-
-  footer.rodape .icone-rede {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-
-  footer.rodape img {
-    vertical-align: middle;
-  }
-
-   .rodape {
-    text-align: center;
-    padding: 12px 0;
-    background: #f1f1f1;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    font-size: 0.9em;
-    color: #666;
-  }
-
-  .icone-rede {
-    width: 24px;
-    height: 24px;
-    margin: 0 8px;
-    vertical-align: middle;
-  }
-
-  .borda-central {
-    position: absolute;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 300px;
-    /* Remova o cálculo anterior e use 100vh menos a altura do rodapé */
-    height: calc(100vh - 62px); /* ajuste 62px para a altura real do seu rodapé */
-    border-left: 2px solid #ccc;
-    border-right: 2px solid #ccc;
-    border-top: 2px solid #ccc;
-    border-bottom: none;
+    min-width: 180px;
+    height: calc(100vh - 250px);
     background: transparent;
     box-sizing: border-box;
     padding: 24px 16px 0 16px;
     overflow-y: auto;
     text-align: center;
-  }
-
-  .btn-cancelar {
-  background: #fff;           /* fundo branco */
-  color: #D97014;             /* texto laranja */
-  font-weight: bold;
-  border: 2px solid #D97014;  /* borda laranja */
-  border-radius: 20px;
-  padding: 10px 28px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
 }
+
+.titulo-publicacoes {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.card {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.likes-dislikes {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.like,
+.dislike {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.like {
+    color: #388e3c;
+}
+
+.dislike {
+    color: #d32f2f;
+}
+
+/* Modal de Login */
+.modal-login {
+    display: none;
+    position: fixed;
+    z-index: 105;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content input[type="email"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botoes-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.btn-cancelar {
+    background: #fff;
+    color: #D97014;
+    font-weight: bold;
+    border: 2px solid #D97014;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
 .btn-cancelar:hover {
-  background: #fff5ea;
-  color: #D97014;
-}
-
-.main-publicacoes {
-  padding: 24px;
-  background: #fff;
-}
-.publicacao {
-  background: #f9f9f9;
-  border-radius: 8px;
-  margin-bottom: 18px;
-  padding: 16px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-}
-.interacoes-usuario {
-  margin-top: 10px;
-  display: flex;
-  gap: 16px;
-  font-size: 1em;
-  align-items: center;
-}
-.like-usuario {
-  color: #388e3c;
-  font-weight: bold;
-}
-.dislike-usuario {
-  color: #d32f2f;
-  font-weight: bold;
+    background: #fff5ea;
+    color: #D97014;
 }
 
 .btn-entrar-modal {
-  background: #D97014;
-  color: #FFFFFF;
-  font-weight: bold;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 28px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.2s;
+    background: #D97014;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
 }
+
 .btn-entrar-modal:hover {
-  background: #b85c10;
+    background: #b85c10;
 }
 
 .input-erro {
-  border: 2px solid #d32f2f !important;
-  background: #fff0f0;
+    border: 2px solid #d32f2f !important;
+    background: #fff0f0;
+}
+
+/* Rodapé */
+.rodape {
+    grid-column: 1 / 4;
+    background: orange;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2px 0 2px 0;
+    font-size: 0.95em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Use gap pequeno, mas separe os blocos manualmente */
+    gap: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 200;
+    min-height: 28px;
+}
+
+/* Blocos separados para espaçamento */
+.rodape-bloco {
+    display: flex;
+    align-items: center;
+}
+
+/* Espaço grande entre os blocos principais */
+.rodape-bloco:not(:last-child) {
+    margin-right: 60px;
+}
+
+/* Ícones próximos entre si */
+.rodape-icones {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.rodape .icone-rede {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
 }
 
 
