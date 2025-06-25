@@ -316,20 +316,19 @@ body {
     background: orange;
     color: #FFFFFF;
     text-align: center;
-    padding: 2px 0 2px 0;
+    padding: 16px 0 16px 0; /* altura aumentada */
     font-size: 0.95em;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Use gap pequeno, mas separe os blocos manualmente */
     gap: 0;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100vw;
     z-index: 200;
-    min-height: 28px;
+    min-height: 48px; /* altura mínima aumentada */
 }
 
 /* Blocos separados para espaçamento */
@@ -340,14 +339,14 @@ body {
 
 /* Espaço grande entre os blocos principais */
 .rodape-bloco:not(:last-child) {
-    margin-right: 60px;
+    margin-right: 100px; /* aumenta o espaçamento entre Sabor do Brasil, ícones e Copyright */
 }
 
-/* Ícones próximos entre si */
+/* Ícones mais espaçados entre si */
 .rodape-icones {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 24px; /* aumenta o espaçamento entre os ícones */
 }
 
 .rodape .icone-rede {
@@ -355,6 +354,34 @@ body {
     width: 24px;
     height: 24px;
     vertical-align: middle;
+}
+
+/* Certifique-se de ter este CSS em style.css para alinhamento lateral */
+.botoes-topo {
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 50px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 102;
+}
+
+.btn-cadastrar {
+  background: #fff;
+  color: #D97014;
+  font-weight: bold;
+  border: 2px solid #D97014;
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-cadastrar:hover {
+  background: #fff5ea;
+  color: #D97014;
 }
 
 
