@@ -2,29 +2,209 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Cadastro - Sabor do Brasil</title>
+  <title>Perfil - Sabor do Brasil</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Adicionando o link para o Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .btn-sair {
+      background: #D97014;
+      color: #fff;
+      font-weight: bold;
+      border: 2px solid #D97014;
+      border-radius: 20px;
+      padding: 10px 28px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      margin-left: 8px;
+    }
+    .btn-sair:hover {
+      background: #fff5ea;
+      color: #D97014;
+    }
+  </style>
 </head>
 <body>
-  <div class="aba-cadastro">
-    <h2>Cadastro</h2>
-    <form onsubmit="validarCadastro(event)">
-      <input type="text" placeholder="Nome completo" required>
-      <input type="email" placeholder="E-mail" required>
-      <input type="tel" placeholder="Telefone" required>
-      <input type="text" placeholder="Endereço" required>
-      <input type="password" placeholder="Senha" required>
-      <input type="password" placeholder="Confirmar senha" required>
-      <div class="botoes-login">
-        <button type="submit" class="btn-entrar-modal">Cadastrar</button>
+  <!-- Logomarca e título -->
+  <div class="logo-text-container">
+    <img src="Logomarca_culinaria_sabor_Brasil.png" alt="Logomarca Sabor do Brasil" class="logo-site-inline">
+    <span class="sabor-brasil-text">
+      Sabor do Brasil
+    </span>
+    <span class="linha-laranja"></span>
+    <div class="likes-dislikes-canto">
+      <div class="like-block">
+        <span class="like-num">0</span>
+        <div class="like-label">Like</div>
       </div>
-    </form>
+      <div class="dislike-block">
+        <span class="dislike-num">0</span>
+        <div class="dislike-label">Dislike</div>
+      </div>
+    </div>
   </div>
+
+  <!-- Botões Cadastrar e Entrar -->
+  <div class="botoes-topo">
+    <button class="btn-cadastrar" onclick="abrirModalCadastro()">Cadastrar</button>
+    <button class="btn-sair" onclick="sairPerfil()">Sair</button>
+  </div>
+
+  <!-- Área central de publicações -->
+  <div class="borda-central">
+    <h2 class="titulo-publicacoes">Publicações</h2>
+    <div class="card">
+      <h3>Feijoada brasileira</h3>
+      <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
+      <a href="#">Go somewhere</a>
+    </div>
+    <div class="card">
+      <h3>Moqueca baiana</h3>
+      <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
+      <a href="#">Go somewhere</a>
+    </div>
+    <div class="card">
+      <h3>Acarajé baiano</h3>
+      <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
+      <a href="#">Go somewhere</a>
+    </div>
+    <div class="card">
+      <h3>Virado à paulista</h3>
+      <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      <div class="likes-dislikes">
+        <span class="like">👍 <span class="like-num">25</span></span>
+        <span class="dislike">👎 <span class="dislike-num">3</span></span>
+      </div>
+      <a href="#">Go somewhere</a>
+    </div>
+  </div>
+
+  <!-- Modal de Login -->
+  <div id="modal-login" class="modal-login" style="display:none;">
+    <div class="modal-content">
+      <span class="close-modal" onclick="fecharModalLogin()">&times;</span>
+      <h2>Login</h2>
+      <form onsubmit="validarLogin(event)">
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <div id="mensagem-erro-login" style="display:none; color:#d32f2f; margin:8px 0 0 0; font-weight:bold;">
+          Usuário ou senha incorreto
+        </div>
+        <div class="botoes-login">
+          <button type="button" class="btn-cancelar" onclick="fecharModalLogin()">Cancelar</button>
+          <button type="submit" class="btn-entrar-modal">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Cadastro -->
+  <div id="modal-cadastro" class="modal-login" style="display:none;">
+    <div class="modal-content">
+      <span class="close-modal" onclick="fecharModalCadastro()">&times;</span>
+      <h2>Cadastro</h2>
+      <form onsubmit="validarCadastro(event)">
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="Telefone" required>
+        <input type="text" placeholder="Endereço" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirmar senha" required>
+        <div class="botoes-login">
+          <button type="button" class="btn-cancelar" onclick="fecharModalCadastro()">Cancelar</button>
+          <button type="submit" class="btn-entrar-modal">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Aba perfil -->
+  <div id="aba-perfil" style="display:none;">
+    <div class="perfil-usuario">
+      <img src="avatar_usuario.png" alt="Avatar do usuário" class="avatar-perfil">
+      <div class="info-perfil">
+        <span class="nome-perfil">usuario_01</span>
+        <span class="likes-geral">👍 Likes: <span id="total-likes">123</span></span>
+        <span class="email-perfil">E-mail: usuario@exemplo.com</span>
+        <span class="telefone-perfil">Telefone: (11) 99999-9999</span>
+        <span class="endereco-perfil">Endereço: Rua Exemplo, 123</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <span class="rodape-bloco">Sabor do Brasil</span>
+    <span class="rodape-bloco rodape-icones">
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-whatsapp"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-envelope"></i>
+    </span>
+    <span class="rodape-bloco">Copyright-2025</span>
+  </footer>
+
   <script>
+    function abrirModalLogin() {
+      document.getElementById('modal-login').style.display = 'block';
+    }
+    function fecharModalLogin() {
+      document.getElementById('modal-login').style.display = 'none';
+    }
+    function abrirModalCadastro() {
+      document.getElementById('modal-cadastro').style.display = 'block';
+    }
+    function fecharModalCadastro() {
+      document.getElementById('modal-cadastro').style.display = 'none';
+    }
+    function validarLogin(event) {
+      event.preventDefault();
+      const email = document.querySelector('#modal-login input[type="email"]');
+      const senha = document.querySelector('#modal-login input[type="password"]');
+      const mensagemErro = document.getElementById('mensagem-erro-login');
+      if (email.value.trim() !== "" && senha.value.trim() !== "") {
+        mensagemErro.style.display = "none";
+        email.classList.remove('input-erro');
+        senha.classList.remove('input-erro');
+        fecharModalLogin();
+        document.getElementById('aba-perfil').style.display = 'block';
+        document.querySelector('.borda-central').style.display = 'none';
+      } else {
+        mensagemErro.style.display = "block";
+        email.classList.add('input-erro');
+        senha.classList.add('input-erro');
+      }
+    }
     function validarCadastro(event) {
       event.preventDefault();
       alert('Cadastro realizado com sucesso!');
-      // Aqui você pode adicionar lógica para salvar o cadastro
+      fecharModalCadastro();
+      // Limpa mensagem de erro do login após cadastro
+      const mensagemErro = document.getElementById('mensagem-erro-login');
+      if (mensagemErro) {
+        mensagemErro.style.display = "none";
+        const emailLogin = document.querySelector('#modal-login input[type="email"]');
+        const senhaLogin = document.querySelector('#modal-login input[type="password"]');
+        if (emailLogin) emailLogin.classList.remove('input-erro');
+        if (senhaLogin) senhaLogin.classList.remove('input-erro');
+      }
+    }
+    function sairPerfil() {
+      // Exemplo: redireciona para a página inicial
+      window.location.href = "index.html";
     }
   </script>
 </body>
