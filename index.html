@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <title>Sabor do Brasil</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Adicionando o link para o Bootstrap Icons -->
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-
 <body>
   <!-- Logomarca e título -->
   <div class="logo-text-container">
@@ -74,28 +72,10 @@
       </div>
       <a href="#">Go somewhere</a>
     </div>
-    <div class="card">
-      <h3>Tortellini</h3>
-      <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-      <div class="likes-dislikes">
-        <span class="like">👍 <span class="like-num">25</span></span>
-        <span class="dislike">👎 <span class="dislike-num">3</span></span>
-      </div>
-      <a href="#">Go somewhere</a>
-    </div>
-    <div class="card">
-      <h3>Risoto de cogumelos</h3>
-      <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-      <div class="likes-dislikes">
-        <span class="like">👍 <span class="like-num">25</span></span>
-        <span class="dislike">👎 <span class="dislike-num">3</span></span>
-      </div>
-      <a href="#">Go somewhere</a>
-    </div>
   </div>
 
   <!-- Modal de Login -->
-  <div id="modal-login" class="modal-login">
+  <div id="modal-login" class="modal-login" style="display:none;">
     <div class="modal-content">
       <span class="close-modal" onclick="fecharModalLogin()">&times;</span>
       <h2>Login</h2>
@@ -133,13 +113,16 @@
     </div>
   </div>
 
-  <!-- Adicione a aba perfil ao seu HTML -->
+  <!-- Aba perfil -->
   <div id="aba-perfil" style="display:none;">
     <div class="perfil-usuario">
       <img src="avatar_usuario.png" alt="Avatar do usuário" class="avatar-perfil">
       <div class="info-perfil">
         <span class="nome-perfil">usuario_01</span>
         <span class="likes-geral">👍 Likes: <span id="total-likes">123</span></span>
+        <span class="email-perfil">E-mail: usuario@exemplo.com</span>
+        <span class="telefone-perfil">Telefone: (11) 99999-9999</span>
+        <span class="endereco-perfil">Endereço: Rua Exemplo, 123</span>
       </div>
     </div>
   </div>
@@ -156,107 +139,55 @@
     <span class="rodape-bloco">Copyright-2025</span>
   </footer>
 
-  <style>
-
-  </style>
-
   <script>
-  function abrirModalLogin() {
-    document.getElementById('modal-login').style.display = 'block';
-  }
-
-  function fecharModalLogin() {
-    document.getElementById('modal-login').style.display = 'none';
-  }
-
-  function abrirModalCadastro() {
-    document.getElementById('modal-cadastro').style.display = 'block';
-  }
-
-  function fecharModalCadastro() {
-    document.getElementById('modal-cadastro').style.display = 'none';
-  }
-
-  // Fechar o modal ao clicar fora dele
-  window.onclick = function (event) {
-    var modal = document.getElementById('modal-login');
-    if (event.target == modal) {
-      modal.style.display = "none";
+    function abrirModalLogin() {
+      document.getElementById('modal-login').style.display = 'block';
     }
-    modal = document.getElementById('modal-cadastro');
-    if (event.target == modal) {
-      modal.style.display = "none";
+    function fecharModalLogin() {
+      document.getElementById('modal-login').style.display = 'none';
     }
-  }
-
-  // Validação de login simulada
-  function validarLogin(event) {
-    event.preventDefault();
-    const email = document.querySelector('#modal-login input[type="email"]');
-    const senha = document.querySelector('#modal-login input[type="password"]');
-    const mensagemErro = document.getElementById('mensagem-erro-login');
-
-    // Permite qualquer usuário e senha preenchidos
-    if (email.value.trim() !== "" && senha.value.trim() !== "") {
-      mensagemErro.style.display = "none";
-      email.classList.remove('input-erro');
-      senha.classList.remove('input-erro');
-      fecharModalLogin();
-
-      // Exibir a aba perfil
-      document.getElementById('aba-perfil').style.display = 'block';
-      // Esconder área central de publicações, se desejar
-      document.querySelector('.borda-central').style.display = 'none';
-    } else {
-      mensagemErro.style.display = "block";
-      email.classList.add('input-erro');
-      senha.classList.add('input-erro');
+    function abrirModalCadastro() {
+      document.getElementById('modal-cadastro').style.display = 'block';
     }
-  }
-
-  // Validação de cadastro simulada
-  function validarCadastro(event) {
-    event.preventDefault();
-    const nome = document.querySelector('#modal-cadastro input[type="text"]');
-    const email = document.querySelector('#modal-cadastro input[type="email"]');
-    const telefone = document.querySelector('#modal-cadastro input[type="tel"]');
-    const endereco = document.querySelector('#modal-cadastro input[type="text"]');
-    const senha = document.querySelector('#modal-cadastro input[type="password"]');
-    const confirmarSenha = document.querySelector('#modal-cadastro input[type="password"]:nth-of-type(2)');
-
-    // Aqui você pode adicionar a lógica para verificar se o e-mail já está cadastrado, etc.
-
-    // Simulação de cadastro bem-sucedido
-    alert('Cadastro realizado com sucesso!');
-    fecharModalCadastro();
-
-    // Remover mensagem de erro do login após cadastro
-    const mensagemErro = document.getElementById('mensagem-erro-login');
-    if (mensagemErro) {
-      mensagemErro.style.display = "none";
-      const emailLogin = document.querySelector('#modal-login input[type="email"]');
-      const senhaLogin = document.querySelector('#modal-login input[type="password"]');
-      if (emailLogin) emailLogin.classList.remove('input-erro');
-      if (senhaLogin) senhaLogin.classList.remove('input-erro');
+    function fecharModalCadastro() {
+      document.getElementById('modal-cadastro').style.display = 'none';
     }
-  }
-
-  // Remove mensagem de erro ao digitar corretamente
-  document.addEventListener('DOMContentLoaded', function () {
-    const email = document.querySelector('#modal-login input[type="email"]');
-    const senha = document.querySelector('#modal-login input[type="password"]');
-    const mensagemErro = document.getElementById('mensagem-erro-login');
-
-    function limparErro() {
-      mensagemErro.style.display = "none";
-      email.classList.remove('input-erro');
-      senha.classList.remove('input-erro');
+    function validarLogin(event) {
+      event.preventDefault();
+      const email = document.querySelector('#modal-login input[type="email"]');
+      const senha = document.querySelector('#modal-login input[type="password"]');
+      const mensagemErro = document.getElementById('mensagem-erro-login');
+      if (email.value.trim() !== "" && senha.value.trim() !== "") {
+        mensagemErro.style.display = "none";
+        email.classList.remove('input-erro');
+        senha.classList.remove('input-erro');
+        fecharModalLogin();
+        document.getElementById('aba-perfil').style.display = 'block';
+        document.querySelector('.borda-central').style.display = 'none';
+      } else {
+        mensagemErro.style.display = "block";
+        email.classList.add('input-erro');
+        senha.classList.add('input-erro');
+      }
     }
-
-    email.addEventListener('input', limparErro);
-    senha.addEventListener('input', limparErro);
-  });
+    function validarCadastro(event) {
+      event.preventDefault();
+      alert('Cadastro realizado com sucesso!');
+      fecharModalCadastro();
+      // Limpa mensagem de erro do login após cadastro
+      const mensagemErro = document.getElementById('mensagem-erro-login');
+      if (mensagemErro) {
+        mensagemErro.style.display = "none";
+        const emailLogin = document.querySelector('#modal-login input[type="email"]');
+        const senhaLogin = document.querySelector('#modal-login input[type="password"]');
+        if (emailLogin) emailLogin.classList.remove('input-erro');
+        if (senhaLogin) senhaLogin.classList.remove('input-erro');
+      }
+    }
+    function sairPerfil() {
+      // Exemplo: recarrega a página ou redireciona para a tela inicial
+      window.location.href = "index.html";
+    }
   </script>
 </body>
-
 </html>
